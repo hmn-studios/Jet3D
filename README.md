@@ -11,11 +11,11 @@ Description add:
   - using Blender (consult with Nogare)
 
 Basic game content:
-    - Jetpack vehicle
-    - Coins
-    - Lasers and rockets
-    - Power-ups
-    - Bonus vehicles
+  - Jetpack vehicle
+  - Coins
+  - Lasers and rockets
+  - Power-ups
+  - Bonus vehicles
 
 Possible coop:
  - Vrgineers Inc.
