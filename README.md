@@ -18,6 +18,6 @@ Basic game content:
   - Bonus vehicles
 
 Possible coop:
- - Vrgineers Inc.
- - Charles University
- - Halfbrick studios
+ - [Vrgineers Inc](https://vrgineers.com/ "Vrgineers's Homepage") 
+ - [Charles University](https://www.mff.cuni.cz/ "MFF UK's Homepage") 
+ - [Halfbrick Studios](https://halfbrick.com/our-games/jetpack-joyride/ "Jetpack Joyride's Homepage") 
