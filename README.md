@@ -19,5 +19,5 @@ Basic game content:
 
 Possible coop:
  - [Vrgineers Inc](https://vrgineers.com/ "Vrgineers's Homepage") 
- - [Charles University](https://www.mff.cuni.cz/ "MFF UK's Homepage") 
+ - [Faculty of matematics and physics - Charles University](https://www.mff.cuni.cz/ "MFF UK's Homepage") 
  - [Halfbrick Studios](https://halfbrick.com/our-games/jetpack-joyride/ "Jetpack Joyride's Homepage") 
