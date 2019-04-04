@@ -1,15 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class MouseControl : MonoBehaviour
 {
-	public double Gravity = 1.62;
-	public double Thrust = 1;
+	[Header("Motion")]
+	public bool AplyGravity = true;
+	public float Gravity = 1.62f;
+	public float Thrust = 1;
+	public float Speed = 100f;
 
 
-	public float speed = 3.5f;
+	[Header("Rotation")]
 	public float rotationSpeed = 150.0f;
 	private float rotY = 0.0f;
 	private float rotX = 0.0f;
@@ -33,14 +38,25 @@ public class MouseControl : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		if (Input.GetKey(KeyCode.Space))
+		if (AplyGravity && this.transform.position.y > 0)
 		{
-			MainBody.AddForce(new Vector3(0, 3, 0));
+			//Aply gravity
+			MainBody.AddRelativeForce(new Vector3(0, -Gravity, 0));
+			print(this.transform.position.y);
 		}
 
+		if (Input.GetKey(KeyCode.Space))
+		{
+			MainBody.AddRelativeForce(new Vector3(0, 3, 0));
+		}
 
-		MainBody.AddForce(this.transform.forward);
-		
+		//Aply forward motion
+
+		Vector3 move = this.transform.forward * Speed * Time.deltaTime;
+		Vector3 actualPosition = this.transform.position;
+		this.transform.position = new Vector3(actualPosition.x + move.x, actualPosition.y, actualPosition.z + move.z);
+
+
 		float mouseX = Input.GetAxis("Mouse X");
 		float mouseY = -Input.GetAxis("Mouse Y");
 
