@@ -38,14 +38,13 @@ public class MouseControl : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		if (AplyGravity && this.transform.position.y > 0)
+		if (AplyGravity)
 		{
 			//Aply gravity
 			MainBody.AddRelativeForce(new Vector3(0, -Gravity, 0));
-			print(this.transform.position.y);
 		}
 
-		if (Input.GetKey(KeyCode.Space))
+		if (Input.GetAxis("Thurst") > 0)
 		{
 			MainBody.AddRelativeForce(new Vector3(0, 3, 0));
 		}
