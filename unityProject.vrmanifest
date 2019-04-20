@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.jet3d.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "D:\\Documents\\HMN Studios\\Jet3D\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Jet3D [Testing]"
+        }
+      }
+    }
+  ]
+}
