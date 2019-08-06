@@ -387,7 +387,7 @@ namespace Valve.VR
             string resourcesPath = System.IO.Path.Combine(rootPath, "Resources");
 
             resourcesPath = resourcesPath.Replace("//", "/");
-            resourcesPath = resourcesPath.Replace("\\\\", "\\");
+            resourcesPath = resourcesPath.Replace("", "\\");
             resourcesPath = resourcesPath.Replace("\\", "/");
 
             if (fromAssetsDirectory)

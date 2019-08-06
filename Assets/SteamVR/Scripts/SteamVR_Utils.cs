@@ -654,7 +654,7 @@ namespace Valve.VR
 
         public static string ConvertToForwardSlashes(string fromString)
         {
-            string newString = fromString.Replace("\\\\", "\\");
+            string newString = fromString.Replace("", "\\");
             newString = newString.Replace("\\", "/");
 
             return newString;
